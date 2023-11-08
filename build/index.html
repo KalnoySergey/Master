@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
     <link rel="stylesheet" href="assets/fonts/ProximaNova-Bold.ttf">
     <link rel="stylesheet" href="assets/fonts/ProximaNova-Light.ttf">
     <link rel="stylesheet" href="assets/fonts/ProximaNova-Semibold.ttf">
@@ -74,7 +75,7 @@
                     <h2 class="first-screen_title">Прямое КАРГО из Китая</h2>
                     <h3 class="first-screen_subtitle">Доставляем любые грузы из Китая по честной цене</h3>
                     <button class="request-button">
-                        <h6 class="button-description">Расчитать стоимость
+                        <h6 class="button-description">Расcчитать стоимость
                         <img src="assets/img/arrow-circle-left 1.svg" alt="button-img">
                     </h6>
 
@@ -87,7 +88,7 @@
                     <h2 class="first-screen_title">Выкуп товара с ТаоБао, 1688</h2>
                     <h3 class="first-screen_subtitle">Выкуп и доставка товаров с китайских торговых площадок.</h3>
                     <button class="request-button">
-                        <h6 class="button-description">Расчитать стоимость
+                        <h6 class="button-description">Расcчитать стоимость
                         <img src="assets/img/arrow-circle-left 1.svg" alt="button-img">
                     </h6>
 
@@ -100,7 +101,7 @@
                     <h2 class="first-screen_title">Экспресс авто доставка</h2>
                     <h3 class="first-screen_subtitle">Доставляем любые грузы из Китая по честной цене</h3>
                     <button class="request-button">
-                        <h6 class="button-description">Расчитать стоимость
+                        <h6 class="button-description">Расcчитать стоимость
                         <img src="assets/img/arrow-circle-left 1.svg" alt="button-img">
                     </h6>
 
@@ -113,7 +114,7 @@
                     <h2 class="first-screen_title">Страховка груза</h2>
                     <h3 class="first-screen_subtitle">Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Украину</h3>
                     <button class="request-button">
-                        <h2 class="button-description">Расчитать стоимость
+                        <h2 class="button-description">Расcчитать стоимость
                         <img src="assets/img/arrow-circle-left 1.svg" alt="button-img">
                     </h2>
 
@@ -123,6 +124,86 @@
 
         </div>
         <div class="first-screen-nav"></div>
+
+        <section class="calculation">
+            <div class="container">
+                <div class="template-title col-lg-7">
+                    <h2>Получить рассчет стоимости доставки вашего груза</h2>
+                </div>
+                <div class="calculation-row">
+                    <form class="calculation-form">
+                        <div class="row one">
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="title" for="product-category">Категория товара:</label>
+                                    <input type="text" id="product-category" name="product-category" placeholder="Категория товара">
+                                </div>
+                                <div class="input-box ">
+                                    <label class="title" for="product-weight">Вес груза (кг):</label>
+                                    <input type="number" id="product-weight" name="product-weight" placeholder="Введите вес">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="title" for="product-price">Стоимость груза:</label>
+                                    <input type="number" id="product-price" name="product-price" placeholder="Введите стоимость">
+                                </div>
+                                <div class="input-box">
+                                    <label class="title" for="product-volume">Объем груза (м3):</label>
+                                    <input type="number" id="product-volume" name="product-volume" placeholder="Введите объем">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-box check">
+                                    <input type="checkbox" id="number" class="form-check-input">
+                                    <label for="number" class="check">Страховка</label>
+                                </div>
+
+                                <div class="input-box check">
+                                    <input type="checkbox" id="number-1" class="form-check-input">
+                                    <label for="number-1" class="check">Таможенное оформление</label>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label for="product-tnCode">Код ТН ВЭД:</label>
+                                    <input type="text" id="product-tnCode" name="product-tnCode" placeholder="Введите код">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <div id="file-name"></div>
+                                    <label class="label-img" for="fileInput">Звгрузить фото товара</label>
+                                    <input type="file" id="fileInput" name="file">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <button type="submit" class="request-button">
+                                        <h6 class="button-description">Следующий шаг
+                                <img src="assets/img/arrow-circle-left 1.svg" alt="button-img">
+                            </h6>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="calculation-decoration">
+                        <img src="assets/img/man.png" class="img-fluid" alt="calculation-decoration">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section>
             <div class="advantages container-fluid">
@@ -229,13 +310,272 @@
             </div>
         </section>
 
-    </main>
+        <section class="delivery">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Варианты доставки грузов из Китая</h2>
+                </div>
+                <div class="carousel-template">
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/delivery1.png" class="img-fluid" alt="delivery-1">
 
+                            </div>
+                            <h4 class="card-title">Авто - обычная</h4>
+                            <div class="card-options">
+                                <div class="card-options-item">
+                                    <img src="assets/img/calendar.svg" alt="icon-calendar">
+
+                            9-15 дней
+                                </div>
+                                <div class="card-options-item">
+                                    <img src="assets/img/box.svg" alt="icon-box">от 5 кг
+                                </div>
+
+                            </div>
+                            <div class="card-price">
+                                <span>от</span>
+                                <strong>2,5</strong>
+                                <span>$/кг</span>
+                            </div>
+                            <div class="btn-row">
+                                <button class="btn-2-2 request-button">
+                                    <p class="button-description">Оставить заявку</p>
+                                </button>
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/delivery2.png" class="img-fluid" alt="delivery-1">
+                            </div>
+                            <h4 class="card-title">Авто - ускоренная</h4>
+                            <div class="card-options">
+                                <div class="card-options-item">
+                                    <img src="assets/img/calendar.svg" alt="icon-calendar">
+                            9-15 дней
+                                </div>
+                                <div class="card-options-item">
+                                    <img src="assets/img/box.svg" alt="icon-box">
+                            от 5 кг
+                                </div>
+
+                            </div>
+                            <div class="card-price">
+                                <span>от</span>
+                                <strong>2,5</strong>
+                                <span>$/кг</span>
+                            </div>
+                            <div class="btn-row">
+                                <button class="btn-2-2 request-button">
+                                    <p class="button-description">Оставить заявку</p>
+                                </button>
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/delivery3.png" class="img-fluid" alt="delivery-1">
+                            </div>
+                            <h4 class="card-title">Авиа</h4>
+                            <div class="card-options">
+                                <div class="card-options-item">
+                                    <img src="assets/img/calendar.svg" alt="icon-calendar">
+                            9-15 дней
+                                </div>
+                                <div class="card-options-item">
+                                    <img src="assets/img/box.svg" alt="icon-box">
+                            от 5 кг
+                                </div>
+
+                            </div>
+                            <div class="card-price">
+                                <span>от</span>
+                                <strong>2,5</strong>
+                                <span>$/кг</span>
+                            </div>
+                            <div class="btn-row">
+                                <button class="btn-2-2 request-button">
+                                    <p class="button-description">Оставить заявку</p>
+                                </button>
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/delivery4.png" class="img-fluid" alt="delivery-1">
+                            </div>
+                            <h4 class="card-title">Ж/д</h4>
+                            <div class="card-options">
+                                <div class="card-options-item">
+                                    <img src="assets/img/calendar.svg" alt="icon-calendar">
+                            9-15 дней
+                                </div>
+                                <div class="card-options-item">
+                                    <img src="assets/img/box.svg" alt="icon-box">
+                            от 5 кг
+                                </div>
+
+                            </div>
+                            <div class="card-price">
+                                <span>от</span>
+                                <strong>2,5</strong>
+                                <span>$/кг</span>
+                            </div>
+                            <div class="btn-row">
+                                <button class="btn-2-2 request-button">
+                                    <p class="button-description">Оставить заявку</p>
+                                </button>
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/delivery5.png" class="img-fluid" alt="delivery-1">
+                            </div>
+                            <h4 class="card-title">Море</h4>
+                            <div class="card-options">
+                                <div class="card-options-item">
+                                    <img src="assets/img/calendar.svg" alt="icon-calendar">
+                            9-15 дней
+                                </div>
+                                <div class="card-options-item">
+                                    <img src="assets/img/box.svg" alt="icon-box">
+                            от 5 кг
+                                </div>
+
+                            </div>
+                            <div class="card-price">
+                                <span>от</span>
+                                <strong>2,5</strong>
+                                <span>$/кг</span>
+                            </div>
+                            <div class="btn-row">
+                                <button class="btn-2-2 request-button">
+                                    <p class="button-description">Оставить заявку</p>
+                                </button>
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="services container-fluid">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Услуги</h2>
+                </div>
+                <div class="carousel-template">
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/services1.png" class="img-fluid" alt="services-1">
+                            </div>
+                            <h4 class="card-title">Выкуп товара</h4>
+                            <div class="card-description">Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.</div>
+                            <div class="btn-row">
+
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/services2.png" class="img-fluid" alt="services-1">
+                            </div>
+                            <h4 class="card-title">Страховка груза</h4>
+                            <div class="card-description">Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.</div>
+                            <div class="btn-row">
+
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/services3.png" class="img-fluid" alt="services-1">
+                            </div>
+                            <h4 class="card-title">Аренда склада</h4>
+                            <div class="card-description">Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.</div>
+                            <div class="btn-row">
+
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="assets/img/services4.png" class="img-fluid" alt="services-1">
+                            </div>
+                            <h4 class="card-title">Перевод денежных средств</h4>
+                            <div class="card-description">Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.</div>
+                            <div class="btn-row">
+
+                                <button class="btn-2-1 request-button">
+                                    <p class="button-description">Подробнее</p>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.7.0.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="assets/css/fancybox.css" />
     <script src="assets/js/script.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
